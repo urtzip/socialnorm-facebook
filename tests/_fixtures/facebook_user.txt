@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Content-Type: text/javascript; charset=UTF-8
+Last-Modified: 2014-12-21T00:04:42+0000
+Access-Control-Allow-Origin: *
+X-FB-Rev: 1648763
+ETag: "78d60efd0cb688737609ace1304b8acddf71e67d"
+Pragma: no-cache
+Cache-Control: private, no-cache, no-store, must-revalidate
+Facebook-API-Version: v1.0
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+X-FB-Debug: bEBMCN9l/H9YnNU5C18u202lXUImsxep9o7ntaTapzHiP4X2BQC6Yx6vhMXB4AsLL664Px0wTdeGcGTXuCL9+A==
+Date: Thu, 19 Mar 2015 03:24:33 GMT
+Connection: keep-alive
+Content-Length: 764
+
+{"id":"187903669","birthday":"03\/15\/1987","email":"example\u0040example.com","first_name":"John","gender":"male","last_name":"Doe","link":"https:\/\/www.facebook.com\/john.doe","locale":"en_US","name":"John Doe","timezone":-4,"updated_time":"2014-12-21T00:04:42+0000","username":"john.doe","verified":true,"work":[]}

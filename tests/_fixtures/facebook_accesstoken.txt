@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Content-Type: text/plain; charset=UTF-8
+Access-Control-Allow-Origin: *
+X-FB-Rev: 1648763
+Pragma: no-cache
+Cache-Control: private, no-cache, no-store, must-revalidate
+Facebook-API-Version: v1.0
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+X-FB-Debug: g/vwFVcMECWLE7F+LK/7BB+iKK4QhTqtP1pUiGpRnibF/0amNQY3TQDO5erl332j1BSGyJGukouOVmZVTaeWRg==
+Date: Thu, 19 Mar 2015 03:23:04 GMT
+Connection: keep-alive
+Content-Length: 252
+
+access_token=nrQpCDgUzGXbh7K6KwDBmj5uEBM4ElZDzYRth3ZouKUHDcZtX0dRcWAnIVpCzVjlCKbFTJ69gLA3nUKcFiQZmrtgwfN5L4cVMCfDPfnpGo4aoThPG6LdnlTiigkTLxPU3tnLokQqYyo5TmGK8Pxwdwfx3StUxFBSnCenFikR6riEYtUYMKfXuILy0hvRAZUZCGdXOzIgCTw9jKNegtWpgdoiacgkFHN&expires=5183867
