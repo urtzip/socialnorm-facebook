@@ -1,3 +1,3 @@
-## SocialNorm
+## SocialNorm Facebook Provider
 
-Will be something eventually...
+@todo: Add docs :)
