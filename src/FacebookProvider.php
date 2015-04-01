@@ -6,8 +6,8 @@ use SocialNorm\Providers\OAuth2Provider;
 class FacebookProvider extends OAuth2Provider
 {
     protected $authorizeUrl = "https://www.facebook.com/dialog/oauth";
-    protected $accessTokenUrl = "https://graph.facebook.com/oauth/access_token";
-    protected $userDataUrl = "https://graph.facebook.com/me";
+    protected $accessTokenUrl = "https://graph.facebook.com/v2.3/oauth/access_token";
+    protected $userDataUrl = "https://graph.facebook.com/v2.3/me";
     protected $scope = [
         'email',
     ];
@@ -27,13 +27,27 @@ class FacebookProvider extends OAuth2Provider
         return $this->userDataUrl;
     }
 
+    protected function requestAccessToken()
+    {
+        $url = $this->getAccessTokenBaseUrl();
+        try {
+            $response = $this->httpClient->get($url, [
+                'query' => [
+                    'client_id' => $this->clientId,
+                    'client_secret' => $this->clientSecret,
+                    'redirect_uri' => $this->redirectUri(),
+                    'code' => $this->request->authorizationCode(),
+                ],
+            ]);
+        } catch (BadResponseException $e) {
+            throw new InvalidAuthorizationCodeException((string) $e->getResponse());
+        }
+        return $this->parseTokenResponse((string) $response->getBody());
+    }
+
     protected function parseTokenResponse($response)
     {
-        parse_str($response);
-        if (! isset($access_token)) {
-            throw new InvalidAuthorizationCodeException;
-        }
-        return $access_token;
+        return $this->parseJsonTokenResponse($response);
     }
 
     protected function parseUserDataResponse($response)
