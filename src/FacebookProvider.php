@@ -62,7 +62,7 @@ class FacebookProvider extends OAuth2Provider
 
     protected function nickname()
     {
-        return $this->getProviderUserData('username');
+        return $this->getProviderUserData('name');
     }
 
     protected function fullName()
@@ -72,7 +72,7 @@ class FacebookProvider extends OAuth2Provider
 
     protected function avatar()
     {
-        return 'https://graph.facebook.com/'.$this->userId().'/picture';
+        return 'https://graph.facebook.com/v2.3/'.$this->userId().'/picture';
     }
 
     protected function email()

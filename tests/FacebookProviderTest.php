@@ -34,12 +34,12 @@ class FacebookProviderTest extends TestCase
         $user = $provider->getUser();
 
         $this->assertEquals('187903669', $user->id);
-        $this->assertEquals('john.doe', $user->nickname);
+        $this->assertEquals('John Doe', $user->nickname);
         $this->assertEquals('John Doe', $user->full_name);
-        $this->assertEquals('example@example.com', $user->email);
-        $this->assertEquals('https://graph.facebook.com/187903669/picture', $user->avatar);
+        $this->assertEquals('john@example.com', $user->email);
+        $this->assertEquals('https://graph.facebook.com/v2.3/187903669/picture', $user->avatar);
         $this->assertEquals(
-            'nrQpCDgUzGXbh7K6KwDBmj5uEBM4ElZDzYRth3ZouKUHDcZtX0dRcWAnIVpCzVjlCKbFTJ69gLA3nUKcFiQZmrtgwfN5L4cVMCfDPfnpGo4aoThPG6LdnlTiigkTLxPU3tnLokQqYyo5TmGK8Pxwdwfx3StUxFBSnCenFikR6riEYtUYMKfXuILy0hvRAZUZCGdXOzIgCTw9jKNegtWpgdoiacgkFHN',
+            'RUXRIAxWwxVYKk3b1vrTACPUiAGImrszVsBXb2FQZZZXbd6JNzkZRAgZLCdAiCfKHrPanMTS8BAHLPqugidBcCNkUmz3y72XMZRZWw4SEGdczB2HygsA7oQOufDIbgZBtyA1KaznugApacfId5HIdZtIEh47ZLEa0BrJrBICZBf4uCWCGD5OBM40RpvTVaAux2vCv5wU9ZZzm91WAVtSC5ufoZmr3Ty',
             $user->access_token
         );
     }

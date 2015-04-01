@@ -1,14 +1,14 @@
 HTTP/1.1 200 OK
-Content-Type: text/plain; charset=UTF-8
+Content-Type: application/json; charset=UTF-8
 Access-Control-Allow-Origin: *
-X-FB-Rev: 1648763
+X-FB-Rev: 1669049
 Pragma: no-cache
 Cache-Control: private, no-cache, no-store, must-revalidate
-Facebook-API-Version: v1.0
+Facebook-API-Version: v2.3
 Expires: Sat, 01 Jan 2000 00:00:00 GMT
-X-FB-Debug: g/vwFVcMECWLE7F+LK/7BB+iKK4QhTqtP1pUiGpRnibF/0amNQY3TQDO5erl332j1BSGyJGukouOVmZVTaeWRg==
-Date: Thu, 19 Mar 2015 03:23:04 GMT
+X-FB-Debug: aWKI40XqPBE1YkeMX7Awln6RzgWl+JQpbYY7MWkiP2cRZ0TNadSG8rTnlHQovxjP+5fTYg1ZfkOVKsiMdJB9Jg==
+Date: Wed, 01 Apr 2015 12:47:40 GMT
 Connection: keep-alive
-Content-Length: 252
+Content-Length: 285
 
-access_token=nrQpCDgUzGXbh7K6KwDBmj5uEBM4ElZDzYRth3ZouKUHDcZtX0dRcWAnIVpCzVjlCKbFTJ69gLA3nUKcFiQZmrtgwfN5L4cVMCfDPfnpGo4aoThPG6LdnlTiigkTLxPU3tnLokQqYyo5TmGK8Pxwdwfx3StUxFBSnCenFikR6riEYtUYMKfXuILy0hvRAZUZCGdXOzIgCTw9jKNegtWpgdoiacgkFHN&expires=5183867
+{"access_token":"RUXRIAxWwxVYKk3b1vrTACPUiAGImrszVsBXb2FQZZZXbd6JNzkZRAgZLCdAiCfKHrPanMTS8BAHLPqugidBcCNkUmz3y72XMZRZWw4SEGdczB2HygsA7oQOufDIbgZBtyA1KaznugApacfId5HIdZtIEh47ZLEa0BrJrBICZBf4uCWCGD5OBM40RpvTVaAux2vCv5wU9ZZzm91WAVtSC5ufoZmr3Ty","token_type":"bearer","expires_in":5183288}
