@@ -14,6 +14,10 @@ class FacebookProvider extends OAuth2Provider
     protected $fields = [
         'email',
         'name',
+        'first_name',
+        'last_name',
+        'age_range',
+        'timezone',
     ];
 
     protected function getAuthorizeUrl()
